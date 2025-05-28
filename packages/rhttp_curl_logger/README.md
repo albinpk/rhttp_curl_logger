@@ -4,7 +4,7 @@
 <!-- [![codecov](https://codecov.io/github/albinpk/rhttp_curl_logger/graph/badge.svg?token=6OY333UOTH)](https://codecov.io/github/albinpk/rhttp_curl_logger) -->
 
 [![Pub Version](https://img.shields.io/pub/v/rhttp_curl_logger)](https://pub.dev/packages/rhttp_curl_logger)
-[![GitHub License](https://img.shields.io/github/license/albinpk/rhttp_curl_logger)](https://github.com/albinpk/rhttp_curl_logger/blob/dev/LICENSE)
+[![GitHub License](https://img.shields.io/github/license/albinpk/rhttp_curl_logger)](https://github.com/albinpk/rhttp_curl_logger/blob/main/LICENSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/albinpk/rhttp_curl_logger)
 [![Pub Points](https://img.shields.io/pub/points/rhttp_curl_logger)](https://pub.dev/packages/rhttp_curl_logger/score)
 
@@ -26,5 +26,5 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dev_dependencies:
-  rhttp_curl_logger: ^<latest_version>
+  rhttp_curl_logger: ^0.0.0
 ```

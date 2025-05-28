@@ -1,0 +1,11 @@
+.dart_tool/
+pubspec.lock
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# FVM Version Cache
+.fvm/

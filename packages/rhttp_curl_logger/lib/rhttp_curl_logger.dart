@@ -1,5 +1,4 @@
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+/// Rhttp Curl Logger
+library;
+
+export 'src/rhttp_curl_logger.dart';

@@ -1,5 +1,7 @@
 name: RhttpCurlLogger
 
+repository: https://github.com/albinpk/rhttp_curl_logger
+
 packages:
   - packages/*
 

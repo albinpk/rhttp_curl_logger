@@ -2,7 +2,10 @@ name: rhttp_curl_logger
 description: "An interceptor for rhttp that prints the request as a single line cURL command"
 
 version: 0.0.0
-# homepage:
+
+homepage: https://github.com/albinpk/rhttp_curl_logger
+repository: https://github.com/albinpk/rhttp_curl_logger/tree/main/packages/rhttp_curl_logger
+issue_tracker: https://github.com/albinpk/rhttp_curl_logger/issues
 
 environment:
   sdk: ^3.8.0
@@ -17,3 +20,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   very_good_analysis: ^8.0.0
+
+topics:
+  - curl
+  - rhttp
+  - interceptor
+  - logging
+  - rhttp-curl-logger

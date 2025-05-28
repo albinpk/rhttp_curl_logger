@@ -15,6 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - run: ls -l
+        working-directory: ${{ inputs.working-directory }}
 
       - name: Setup Flutter SDK
         # uses: kuhnroyal/flutter-fvm-config-action@v2

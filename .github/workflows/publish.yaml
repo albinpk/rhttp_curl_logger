@@ -1,0 +1,64 @@
+name: Publish to pub.dev
+
+on:
+  workflow_call:
+    inputs:
+      working-directory:
+        required: true
+        type: string
+
+jobs:
+  publish_to_pub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Flutter SDK
+        # uses: kuhnroyal/flutter-fvm-config-action@v2
+        uses: kuhnroyal/flutter-fvm-config-action/setup@v3
+        # id: fvm-config-action
+      # - uses: subosito/flutter-action@v2
+      #   with:
+      #     flutter-version: ${{ steps.fvm-config-action.outputs.FLUTTER_VERSION }}
+      #     channel: ${{ steps.fvm-config-action.outputs.FLUTTER_CHANNEL }}
+
+      - name: Install dependencies
+        run: flutter pub get
+        working-directory: ${{ inputs.working-directory }}
+
+      - name: Flutter test
+        run: flutter test --coverage
+        working-directory: ${{ inputs.working-directory }}
+
+      - name: Upload coverage to codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          working-directory: ${{ inputs.working-directory }}
+
+      - name: Publish - dry run
+        run: flutter pub publish --dry-run
+        working-directory: ${{ inputs.working-directory }}
+
+      - name: Setup pub credentials
+        run: |
+          mkdir ~/.config/dart/
+          cat <<-EOF > ~/.config/dart/pub-credentials.json
+          {
+            "accessToken": "$PUB_ACCESS_TOKEN",
+            "refreshToken": "$PUB_REFRESH_TOKEN",
+            "idToken": "$PUB_ID_TOKEN",
+            "tokenEndpoint": "https://accounts.google.com/o/oauth2/token",
+            "scopes": ["https://www.googleapis.com/auth/userinfo.email", "openid"],
+            "expiration": 1727370873000
+          }
+          EOF
+        env:
+          PUB_ACCESS_TOKEN: ${{ secrets.PUB_ACCESS_TOKEN }}
+          PUB_REFRESH_TOKEN: ${{ secrets.PUB_REFRESH_TOKEN }}
+          PUB_ID_TOKEN: ${{ secrets.PUB_ID_TOKEN }}
+
+    #   - name: Publish to pub.dev
+    #     run: flutter pub publish -f
+    #     working-directory: ${{ inputs.working-directory }}

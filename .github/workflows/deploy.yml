@@ -2,12 +2,13 @@ name: deploy
 
 on:
   push:
-    tags:
-      - "rhttp_curl_logger-v[0-9]+.[0-9]+.[0-9]+*"
+    # tags:
+    #   - "rhttp_curl_logger-v[0-9]+.[0-9]+.[0-9]+*"
 
 jobs:
   publish:
-    uses: albinpk/flutter_cora/.github/workflows/publish.yml@6e476fba66a02bd675fe6d98cabf3aae4dd8a58d
+    # uses: albinpk/flutter_cora/.github/workflows/publish.yml@6e476fba66a02bd675fe6d98cabf3aae4dd8a58d
+    uses: ./.github/workflows/publish.yml
     secrets: inherit
     with:
       working-directory: packages/rhttp_curl_logger

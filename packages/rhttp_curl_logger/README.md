@@ -28,3 +28,17 @@ Add the package to your `pubspec.yaml`:
 dev_dependencies:
   rhttp_curl_logger: ^0.0.1
 ```
+
+## 🚀 Usage
+
+Use the `RhttpCurlLogger` interceptor in your `rhttp` client:
+
+```dart
+import 'package:rhttp_curl_logger/rhttp_curl_logger.dart';
+
+final client = await RhttpClient.create(
+  interceptors: [
+    RhttpCurlLogger(),
+  ],
+);
+```

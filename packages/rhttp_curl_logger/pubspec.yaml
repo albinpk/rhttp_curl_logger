@@ -1,7 +1,7 @@
 name: rhttp_curl_logger
 description: "An interceptor for rhttp that prints the request as a single line cURL command"
 
-version: 0.0.0
+version: 0.0.1
 
 homepage: https://github.com/albinpk/rhttp_curl_logger
 repository: https://github.com/albinpk/rhttp_curl_logger/tree/main/packages/rhttp_curl_logger

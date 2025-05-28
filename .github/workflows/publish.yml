@@ -14,6 +14,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - run: ls -l
+
       - name: Setup Flutter SDK
         # uses: kuhnroyal/flutter-fvm-config-action@v2
         uses: kuhnroyal/flutter-fvm-config-action/setup@v3

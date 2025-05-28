@@ -3,7 +3,7 @@ name: RhttpCurlLogger
 packages:
   - packages/*
 
-sdkPath: .fvm/flutter_sdk
+sdkPath: packages/rhttp_curl_logger/.fvm/flutter_sdk
 
 command:
   version:

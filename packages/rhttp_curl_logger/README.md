@@ -38,7 +38,13 @@ import 'package:rhttp_curl_logger/rhttp_curl_logger.dart';
 
 final client = await RhttpClient.create(
   interceptors: [
-    RhttpCurlLogger(),
+    RhttpCurlLogger(
+      useDoubleQuotes: true,    // default
+      escapeQuotesInBody: true, // default
+      multiline: false,         // default
+      logName: 'curl_log',      // default
+      logger: null,             // default
+    ),
   ],
 );
 ```

@@ -15,7 +15,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
-  rhttp_curl_logger: ^0.0.1+1
+  # rhttp_curl_logger: ^latest
+  rhttp_curl_logger:
+    path: ../
 
 flutter:
   uses-material-design: true

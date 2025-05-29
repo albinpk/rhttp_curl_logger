@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:rhttp/rhttp.dart';
@@ -27,9 +25,30 @@ class _AppState extends State<App> {
 
   late final RhttpClient _client;
 
-  void _initRhttp() async {
+  Future<void> _initRhttp() async {
     _client = await RhttpClient.create(
-      interceptors: [if (kDebugMode) RhttpCurlLogger()],
+      interceptors: [
+        SimpleInterceptor(
+          beforeRequest: (request) async {
+            return Interceptor.next(
+              request.addHeader(
+                name: HttpHeaderName.contentType,
+                value: 'application/json',
+              ),
+            );
+          },
+        ),
+
+        // Add RhttpCurlLogger
+        if (kDebugMode)
+          RhttpCurlLogger(
+            useDoubleQuotes: true, // default
+            escapeQuotesInBody: true, // default
+            multiline: false, // default
+            logName: 'curl_log', // default
+            logger: null, // default
+          ),
+      ],
     );
   }
 
@@ -45,10 +64,10 @@ class _AppState extends State<App> {
   }
 
   Future<void> _request() async {
-    final response = await _client.post(
+    await _client.post(
       'https://jsonplaceholder.typicode.com/posts',
+      query: {'foo': 'bar', 'baz': '1'},
       body: HttpBody.json({'title': 'foo', 'body': 'bar', 'userId': 1}),
     );
-    log(response.body);
   }
 }

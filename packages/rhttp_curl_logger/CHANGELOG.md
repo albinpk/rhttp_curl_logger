@@ -1,3 +1,7 @@
+## 0.0.1+1
+
+ - **DOCS**: update README.md with usage instructions for RhttpCurlLogger. ([15fcf30a](https://github.com/albinpk/rhttp_curl_logger/commit/15fcf30ac353d0bf1c1f0b5d6483275a4a796140))
+
 ## 0.0.1
 
  - **FIX**: README.md. ([f4d9bd2a](https://github.com/albinpk/rhttp_curl_logger/commit/f4d9bd2a2390d86e413a679c8ca9eb492ed4081f))

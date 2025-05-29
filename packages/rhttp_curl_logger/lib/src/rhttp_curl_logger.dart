@@ -5,6 +5,9 @@ import 'package:rhttp/rhttp.dart';
 
 /// Prints the request as a single line cURL command
 class RhttpCurlLogger extends Interceptor {
+  /// Creates a new [RhttpCurlLogger].
+  RhttpCurlLogger();
+
   @override
   Future<InterceptorResult<HttpRequest>> beforeRequest(
     HttpRequest request,

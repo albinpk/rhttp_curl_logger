@@ -1,3 +1,10 @@
+## 0.0.2
+
+ - **FEAT**: curl configurations. ([afdfff82](https://github.com/albinpk/rhttp_curl_logger/commit/afdfff82c7a34e19fcfa22678e49f74ef7670b2e))
+ - **DOCS**: update example app and readme. ([30441e58](https://github.com/albinpk/rhttp_curl_logger/commit/30441e58fa6a54aef44d5dfee3f895fbe67a0b33))
+ - **DOCS**: create example app. ([b6474143](https://github.com/albinpk/rhttp_curl_logger/commit/b6474143648d9c6b7e36bbfdacc5ccb5495023bd))
+ - **DOCS**: add doc comment for constructor. ([3f9bbc99](https://github.com/albinpk/rhttp_curl_logger/commit/3f9bbc99e4b749a467346e5a70f5583f11380f45))
+
 ## 0.0.1+1
 
  - **DOCS**: update README.md with usage instructions for RhttpCurlLogger. ([15fcf30a](https://github.com/albinpk/rhttp_curl_logger/commit/15fcf30ac353d0bf1c1f0b5d6483275a4a796140))

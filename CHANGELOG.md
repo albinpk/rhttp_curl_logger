@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2025-06-02
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`rhttp_curl_logger` - `v0.0.3`](#rhttp_curl_logger---v003)
+
+---
+
+#### `rhttp_curl_logger` - `v0.0.3`
+
+ - **FEAT**: enhance body handling in curl command generation. ([dfef8765](https://github.com/albinpk/rhttp_curl_logger/commit/dfef876506176de94e6e2700020d932c082b17b9))
+
+
 ## 2025-05-29
 
 ### Changes

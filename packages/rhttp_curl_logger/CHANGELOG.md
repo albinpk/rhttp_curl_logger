@@ -1,3 +1,7 @@
+## 0.0.3
+
+ - **FEAT**: enhance body handling in curl command generation. ([dfef8765](https://github.com/albinpk/rhttp_curl_logger/commit/dfef876506176de94e6e2700020d932c082b17b9))
+
 ## 0.0.2
 
  - **FEAT**: curl configurations. ([afdfff82](https://github.com/albinpk/rhttp_curl_logger/commit/afdfff82c7a34e19fcfa22678e49f74ef7670b2e))

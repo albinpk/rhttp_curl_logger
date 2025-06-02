@@ -75,19 +75,52 @@ class RhttpCurlLogger extends Interceptor {
     });
 
     // Append body
-    String? bodyString;
-    if (request.body case HttpBodyJson(:final json)) {
-      bodyString = jsonEncode(json);
-    } else if (request.body != null) {
-      bodyString = request.body.toString();
-    }
-    if (bodyString != null) {
-      final data = escapeQuotesInBody
-          ? bodyString.replaceAll(q, '\\$q')
-          : bodyString;
-      buffer
-        ..write(s)
-        ..write('-d $q$data$q');
+    switch (request.body) {
+      case HttpBodyJson(:final json):
+        final bodyString = jsonEncode(json);
+        final data = escapeQuotesInBody
+            ? bodyString.replaceAll(q, '\\$q')
+            : bodyString;
+        buffer
+          ..write(s)
+          ..write('-d $q$data$q');
+
+      case HttpBodyForm(:final form):
+        for (final MapEntry(:key, :value) in form.entries) {
+          buffer
+            ..write(s)
+            ..write('-F $q$key=$value$q');
+        }
+
+      case HttpBodyMultipart(:final parts):
+        for (final (key, item) in parts) {
+          buffer.write(s);
+          switch (item) {
+            case MultiPartText(:final text):
+              buffer.write('-F $q$key=$text$q');
+            case MultiPartFile(:final file):
+              buffer.write('-F $q$key=@$file$q');
+            case MultiPartBytes():
+              buffer.write('-F $q$key=[bytes]$q');
+          }
+        }
+
+      case HttpBodyBytes():
+        buffer
+          ..write(s)
+          ..write('-d [bytes]');
+
+      case HttpBodyBytesStream(:final length):
+        buffer
+          ..write(s)
+          ..write('-d [stream${length != null ? '($length)' : ''}]');
+
+      case HttpBodyText(:final text):
+        buffer
+          ..write(s)
+          ..write('-d $q$text$q');
+
+      case null:
     }
 
     // Append query parameters to the URL

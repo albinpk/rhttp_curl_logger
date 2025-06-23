@@ -1,3 +1,7 @@
+## 0.0.3+1
+
+ - **DOCS**: add sample output in `README.md`. ([1f66e92a](https://github.com/albinpk/rhttp_curl_logger/commit/1f66e92a15de4ad79e26f82cf0cf09870590a32c))
+
 ## 0.0.3
 
  - **FEAT**: enhance body handling in curl command generation. ([dfef8765](https://github.com/albinpk/rhttp_curl_logger/commit/dfef876506176de94e6e2700020d932c082b17b9))

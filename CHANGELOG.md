@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2025-06-23
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`rhttp_curl_logger` - `v0.0.3+1`](#rhttp_curl_logger---v0031)
+
+---
+
+#### `rhttp_curl_logger` - `v0.0.3+1`
+
+ - **DOCS**: add sample output in `README.md`. ([1f66e92a](https://github.com/albinpk/rhttp_curl_logger/commit/1f66e92a15de4ad79e26f82cf0cf09870590a32c))
+
+
 ## 2025-06-02
 
 ### Changes

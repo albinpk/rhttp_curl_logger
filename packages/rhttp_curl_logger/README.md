@@ -48,3 +48,29 @@ final client = await RhttpClient.create(
   ],
 );
 ```
+
+## 🧪 Example
+
+- Configuration:
+
+```dart
+final client = RHttpClient(
+  interceptors: [
+    RhttpCurlLogger(
+      multiline: true,
+      logName: 'rhttp',
+      useDoubleQuotes: false,
+    ),
+  ],
+);
+```
+
+- Output sample:
+
+```bash
+[rhttp] curl -X POST
+        -H 'content-type: application/json'
+        -d '{"title":"foo","body":"bar","userId":1}'
+        'https://jsonplaceholder.typicode.com/posts?foo=bar&baz=1'
+
+```

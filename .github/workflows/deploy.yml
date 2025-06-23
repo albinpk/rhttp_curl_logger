@@ -7,7 +7,8 @@ on:
 
 jobs:
   publish:
-    uses: albinpk/flutter_cora/.github/workflows/publish.yml@2d68be9d00bf47973408313078b16322ed07cb73
+    # uses: albinpk/flutter_cora/.github/workflows/publish.yml@2d68be9d00bf47973408313078b16322ed07cb73
+    uses: albinpk/actions/.github/workflows/pub_deploy.yml@52302630c5466475175dc63979feed3193bc663d
     secrets: inherit
     with:
       working-directory: packages/rhttp_curl_logger

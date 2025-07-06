@@ -1,3 +1,7 @@
+# Miscellaneous
+.DS_Store
+
+# Dart related
 .dart_tool/
 pubspec.lock
 

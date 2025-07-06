@@ -1,7 +1,23 @@
 name: rhttp_curl_logger_workspace
 
+publish_to: none
+
+workspace:
+  - packages/rhttp_curl_logger
+
 environment:
   sdk: ">=3.8.0 <4.0.0"
 
 dev_dependencies:
-  melos: ^6.3.3
+  melos: ^7.0.0-dev.9
+  very_good_analysis: ^9.0.0
+
+melos:
+  repository: https://github.com/albinpk/rhttp_curl_logger
+  sdkPath: .fvm/flutter_sdk
+  command:
+    version:
+      hooks:
+        # Update the version in readme
+        preCommit: bash -c "$(curl -s https://raw.githubusercontent.com/albinpk/flutter_cora/refs/heads/dev/scripts/preVersion.sh)"
+        post: flutter pub publish --dry-run --directory=packages/rhttp_curl_logger

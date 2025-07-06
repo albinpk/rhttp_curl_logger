@@ -1,8 +1,8 @@
 # rhttp_curl_logger
 
-<!-- [![deploy](https://github.com/albinpk/rhttp_curl_logger/actions/workflows/deploy.yml/badge.svg)](https://github.com/albinpk/rhttp_curl_logger/actions/workflows/deploy.yml) -->
 <!-- [![codecov](https://codecov.io/github/albinpk/rhttp_curl_logger/graph/badge.svg?token=6OY333UOTH)](https://codecov.io/github/albinpk/rhttp_curl_logger) -->
 
+[![deploy](https://github.com/albinpk/rhttp_curl_logger/actions/workflows/deploy.yml/badge.svg)](https://github.com/albinpk/rhttp_curl_logger/actions/workflows/deploy.yml)
 [![Pub Version](https://img.shields.io/pub/v/rhttp_curl_logger)](https://pub.dev/packages/rhttp_curl_logger)
 [![GitHub License](https://img.shields.io/github/license/albinpk/rhttp_curl_logger)](https://github.com/albinpk/rhttp_curl_logger/blob/main/LICENSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/albinpk/rhttp_curl_logger)
@@ -72,5 +72,10 @@ final client = RHttpClient(
         -H 'content-type: application/json'
         -d '{"title":"foo","body":"bar","userId":1}'
         'https://jsonplaceholder.typicode.com/posts?foo=bar&baz=1'
-
 ```
+
+---
+
+If you find this package helpful, consider giving it a 👍 on [pub.dev](https://pub.dev/packages/rhttp_curl_logger) or sharing it with others.
+
+For bugs, or feature requests, feel free to [open an issue](https://github.com/albinpk/rhttp_curl_logger/issues)

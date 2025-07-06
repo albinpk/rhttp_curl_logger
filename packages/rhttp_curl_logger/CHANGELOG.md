@@ -1,3 +1,7 @@
+## 0.0.3+2
+
+ - **DOCS**: update README with build status badge. ([6d68c95b](https://github.com/albinpk/rhttp_curl_logger/commit/6d68c95b3718014712bb7ab438403e9f0719a199))
+
 ## 0.0.3+1
 
  - **DOCS**: add sample output in `README.md`. ([1f66e92a](https://github.com/albinpk/rhttp_curl_logger/commit/1f66e92a15de4ad79e26f82cf0cf09870590a32c))

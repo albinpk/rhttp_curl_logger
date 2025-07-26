@@ -1,3 +1,8 @@
+## 0.1.0
+
+ - **FIX**: upgrade rhttp to `0.13.0`. ([e23e2c38](https://github.com/albinpk/rhttp_curl_logger/commit/e23e2c3849d2244796f9b492d7fe8cc85d107f11))
+ - **DOCS**: add codecov badge in README.md. ([537365c0](https://github.com/albinpk/rhttp_curl_logger/commit/537365c08d0276a3d23f22395edc6b6b6938822c))
+
 ## 0.0.3+2
 
  - **DOCS**: update README with build status badge. ([6d68c95b](https://github.com/albinpk/rhttp_curl_logger/commit/6d68c95b3718014712bb7ab438403e9f0719a199))

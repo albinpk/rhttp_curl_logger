@@ -1,3 +1,7 @@
+## 0.1.0+1
+
+ - **FIX**: update flutter sdk to `3.35.1`. ([2f43d6fe](https://github.com/albinpk/rhttp_curl_logger/commit/2f43d6fe84cabbcd838800d367d8cd8c5bd55ba5))
+
 ## 0.1.0
 
  - **FIX**: upgrade rhttp to `0.13.0`. ([e23e2c38](https://github.com/albinpk/rhttp_curl_logger/commit/e23e2c3849d2244796f9b492d7fe8cc85d107f11))

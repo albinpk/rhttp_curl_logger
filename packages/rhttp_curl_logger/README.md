@@ -25,7 +25,7 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dev_dependencies:
-  rhttp_curl_logger: ^0.1.0
+  rhttp_curl_logger: ^0.1.0+1
 ```
 
 ## 🚀 Usage

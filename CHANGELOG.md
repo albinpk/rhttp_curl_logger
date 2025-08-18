@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2025-08-18
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`rhttp_curl_logger` - `v0.1.0+1`](#rhttp_curl_logger---v0101)
+
+---
+
+#### `rhttp_curl_logger` - `v0.1.0+1`
+
+ - **FIX**: update flutter sdk to `3.35.1`. ([2f43d6fe](https://github.com/albinpk/rhttp_curl_logger/commit/2f43d6fe84cabbcd838800d367d8cd8c5bd55ba5))
+
+
 ## 2025-07-26
 
 ### Changes

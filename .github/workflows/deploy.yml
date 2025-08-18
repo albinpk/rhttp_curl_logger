@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish:
-    uses: albinpk/actions/.github/workflows/pub_deploy.yml@v1.2.1
+    uses: albinpk/actions/.github/workflows/pub_deploy.yml@8e2d19bf317141b1331079c63a9d57df865e1efe
     secrets: inherit
     with:
       working-directory: packages/rhttp_curl_logger

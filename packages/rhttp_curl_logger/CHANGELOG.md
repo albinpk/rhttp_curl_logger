@@ -1,3 +1,9 @@
+## 0.2.0
+
+> Note: This release has breaking changes.
+
+ - **BREAKING** **FIX**: upgrade rhttp to `0.14.0`. ([a492aec7](https://github.com/albinpk/rhttp_curl_logger/commit/a492aec7b13c55869fbadac15735b014d5c4d469))
+
 ## 0.1.0+1
 
  - **FIX**: update flutter sdk to `3.35.1`. ([2f43d6fe](https://github.com/albinpk/rhttp_curl_logger/commit/2f43d6fe84cabbcd838800d367d8cd8c5bd55ba5))

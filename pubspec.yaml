@@ -4,6 +4,7 @@ publish_to: none
 
 workspace:
   - packages/rhttp_curl_logger
+  - packages/rhttp_curl_logger/example
 
 environment:
   sdk: ^3.9.0

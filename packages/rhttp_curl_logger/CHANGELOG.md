@@ -1,3 +1,8 @@
+## 0.2.1
+
+ - **FIX**: add `example` app to workspace and migrate to latest sdk. ([60abf903](https://github.com/albinpk/rhttp_curl_logger/commit/60abf903e2d6893d4a3e13e36c716c9d1d06c8c1))
+ - **FEAT**: upgrade rhttp to `0.15.0`. ([984d5c0e](https://github.com/albinpk/rhttp_curl_logger/commit/984d5c0e89946458f97703710be7c040f725dbdf))
+
 ## 0.2.0
 
 > Note: This release has breaking changes.

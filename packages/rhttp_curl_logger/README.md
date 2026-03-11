@@ -1,6 +1,6 @@
 # rhttp_curl_logger
 
-[![deploy](https://github.com/albinpk/rhttp_curl_logger/actions/workflows/deploy.yml/badge.svg)](https://github.com/albinpk/rhttp_curl_logger/actions/workflows/deploy.yml)
+[![Publish](https://github.com/albinpk/rhttp_curl_logger/actions/workflows/publish.yml/badge.svg)](https://github.com/albinpk/rhttp_curl_logger/actions/workflows/publish.yml)
 [![codecov](https://codecov.io/gh/albinpk/rhttp_curl_logger/graph/badge.svg?token=4387HYG1UE)](https://codecov.io/gh/albinpk/rhttp_curl_logger)
 [![Pub Version](https://img.shields.io/pub/v/rhttp_curl_logger)](https://pub.dev/packages/rhttp_curl_logger)
 [![GitHub License](https://img.shields.io/github/license/albinpk/rhttp_curl_logger)](https://github.com/albinpk/rhttp_curl_logger/blob/main/LICENSE)

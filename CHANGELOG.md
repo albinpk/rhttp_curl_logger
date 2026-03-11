@@ -15,6 +15,27 @@ Packages with breaking changes:
 
 Packages with other changes:
 
+ - [`rhttp_curl_logger` - `v0.2.1+2`](#rhttp_curl_logger---v0212)
+
+---
+
+#### `rhttp_curl_logger` - `v0.2.1+2`
+
+ - **DOCS**: update workflow badge in `README.md`. ([33e13b26](https://github.com/albinpk/rhttp_curl_logger/commit/33e13b262a1a8f6b973340237813003f09a35cfa))
+
+
+## 2026-03-11
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
  - [`rhttp_curl_logger` - `v0.2.1+1`](#rhttp_curl_logger---v0211)
 
 ---

@@ -1,3 +1,7 @@
+## 0.2.1+2
+
+ - **DOCS**: update workflow badge in `README.md`. ([33e13b26](https://github.com/albinpk/rhttp_curl_logger/commit/33e13b262a1a8f6b973340237813003f09a35cfa))
+
 ## 0.2.1+1
 
  - **FIX**: update dependency version in `example` app. ([fc7ba0d8](https://github.com/albinpk/rhttp_curl_logger/commit/fc7ba0d82050123a9797536850a8cf8304f39755))

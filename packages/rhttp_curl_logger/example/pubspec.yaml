@@ -12,14 +12,11 @@ dependencies:
   flutter:
     sdk: flutter
   rhttp: ^0.15.0
-  # rhttp_curl_logger: ^latest
-  rhttp_curl_logger:
-    path: ../
+  rhttp_curl_logger: ^0.2.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
 
 flutter:
   uses-material-design: true

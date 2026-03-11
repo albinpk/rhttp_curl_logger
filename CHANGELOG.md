@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2026-03-11
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`rhttp_curl_logger` - `v0.2.1+1`](#rhttp_curl_logger---v0211)
+
+---
+
+#### `rhttp_curl_logger` - `v0.2.1+1`
+
+ - **FIX**: update dependency version in `example` app. ([fc7ba0d8](https://github.com/albinpk/rhttp_curl_logger/commit/fc7ba0d82050123a9797536850a8cf8304f39755))
+
+
 ## 2025-12-20
 
 ### Changes

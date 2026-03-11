@@ -1,3 +1,7 @@
+## 0.2.1+1
+
+ - **FIX**: update dependency version in `example` app. ([fc7ba0d8](https://github.com/albinpk/rhttp_curl_logger/commit/fc7ba0d82050123a9797536850a8cf8304f39755))
+
 ## 0.2.1
 
  - **FIX**: add `example` app to workspace and migrate to latest sdk. ([60abf903](https://github.com/albinpk/rhttp_curl_logger/commit/60abf903e2d6893d4a3e13e36c716c9d1d06c8c1))

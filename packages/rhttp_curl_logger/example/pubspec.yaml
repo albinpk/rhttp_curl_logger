@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   rhttp: ^0.15.0
-  rhttp_curl_logger: ^0.2.1+1
+  rhttp_curl_logger: ^0.2.1+2
 
 dev_dependencies:
   flutter_test:

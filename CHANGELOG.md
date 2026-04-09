@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2026-04-09
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`rhttp_curl_logger` - `v0.16.0`](#rhttp_curl_logger---v0160)
+
+---
+
+#### `rhttp_curl_logger` - `v0.16.0`
+
+ - **FEAT**: align package version with `rhttp` version
+
+ - **FIX**: update dependency version in `example` app. ([6f2031f6](https://github.com/albinpk/rhttp_curl_logger/commit/6f2031f632481d576619b509777ba3000ffb14a0))
+ - **FIX**: update dependency version in `example` app. ([fc7ba0d8](https://github.com/albinpk/rhttp_curl_logger/commit/fc7ba0d82050123a9797536850a8cf8304f39755))
+ - **FEAT**: upgrade `rhttp` to `0.16.0`. ([14fdd0e3](https://github.com/albinpk/rhttp_curl_logger/commit/14fdd0e3ef634e6e5426c5b71dd2d2687b1bedb9))
+ - **DOCS**: update workflow badge in `README.md`. ([02ab96db](https://github.com/albinpk/rhttp_curl_logger/commit/02ab96db98ed5eff5f644adc182de624b0a7d373))
+ - **DOCS**: update workflow badge in `README.md`. ([33e13b26](https://github.com/albinpk/rhttp_curl_logger/commit/33e13b262a1a8f6b973340237813003f09a35cfa))
+
+
 ## 2026-03-11
 
 ### Changes

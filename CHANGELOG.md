@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2026-05-30
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`rhttp_curl_logger` - `v0.17.0`](#rhttp_curl_logger---v0170)
+
+---
+
+#### `rhttp_curl_logger` - `v0.17.0`
+
+ - **FEAT**: upgrade to rhttp `0.17.0`. ([38f64a93](https://github.com/albinpk/rhttp_curl_logger/commit/38f64a93036a284f99bd6f996c7140fbd7b3f3da))
+
+
 ## 2026-04-09
 
 ### Changes

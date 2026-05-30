@@ -1,3 +1,7 @@
+## 0.17.0
+
+ - **FEAT**: upgrade to rhttp `0.17.0`. ([38f64a93](https://github.com/albinpk/rhttp_curl_logger/commit/38f64a93036a284f99bd6f996c7140fbd7b3f3da))
+
 ## 0.16.0
 
  - **FEAT**: align package version with `rhttp` version
